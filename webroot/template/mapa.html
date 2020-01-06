@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="description" content="Template Alma">
+        <meta name="author" content="Syloper">
+
+        <title>Inicio | Template Alma</title>
+
+        <!-- <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+        <meta name="application-name" content="&nbsp;" />
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="mstile-310x310.png" /> -->
+
+        <link rel="stylesheet" href="/webroot/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/webroot/vendor/select2/select2.min.css" />
+        <link rel="stylesheet" href="/webroot/vendor/select2/select2-bootstrap4.min.css" />
+        <link rel="stylesheet" href="/webroot/css/main.min.css" />
+    </head>
+
+    <body>
+
+        <div id="contenedor-sitio">    
+         
+            <!-- Loader que paarece mientras carga el sitio -->
+            <div class="loader"></div>
+
+            <!-- Cajas filtro -->
+            <div class="cajas">
+                
+                <!-- Primer caja para elegir relacion -->
+                <section class="caja activa" style="background-color: #89d1e4;">
+                    <div class="overlay"></div>
+                    <div class="opcion_seleccionada retroceder">
+                        <p>Mapa</p>
+                    </div>
+
+                    <div class="contenido-caja h-100">
+                        <div class="container h-100">
+                            <div class="row h-100 justify-content-center align-content-center align-items-center">
+                                <div class="col-10 text-center">
+                                    <div id="mapa">
+                                        <svg version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                                            x="0px" y="0px" width="357.679px" height="276.921px" viewBox="0 0 357.679 276.921" enable-background="new 0 0 357.679 276.921"
+                                            xml:space="preserve">
+                                        <a xlink:href="#" class="avanzar">
+                                            <path fill="#FFCC33" d="M302.39,0.046c-12.921-1.436-15,31-22,41s-24,19-24,24s-5,24.319,18,21.319s-1-14.319,10-15.319s26,5,43,5
+                                            s11-18,20-21s21-17-8-23C316.031,27.213,320.39,2.046,302.39,0.046z"/>
+                                        </a>
+                                        
+                                        <a xlink:href="#" class="avanzar">
+                                            <path fill="#451BCE" d="M287.39,94.046c-6.083,0,3,18-6,18s-8-9-16-9s-8,61-19,70s-42,20.206-45,13.603s18-14.366,6.476-20.913
+                                            c-8.858-5.032-29.476,32.31-40.476,32.31s-89-5-97,0s-3,24.138,9,27.569c12,3.431,56-5.431,64,0c8,5.431-12,18.431-4,23.431
+                                            s44-4,57-8s8-11.862,19-12.431c11-0.569,16,20.431,41,17.431s9.105-29,31.053-30c21.947-1,4.947,19,11.947,19s15-8.968,15-27.484
+                                            s-14-25.137-14-41.826s10.957-15.69,4.979-39.69C299.39,102.046,297.39,94.046,287.39,94.046z"/>
+                                        </a>
+                                        
+                                        <a xlink:href="#" class="avanzar">
+                                            <path fill="#C92499" d="M115.39,228.615c-10.281-3.107-37,6.431-39,11.431s5,17,14,17s38-0.04,38-14.52
+                                            C128.39,228.046,115.39,228.615,115.39,228.615z"/>
+                                        </a>
+                                        
+                                        <a xlink:href="#" class="avanzar">
+                                            <path fill="#FF9999" d="M43.39,207.562c-13.875-1.94-51,9.484-42,26.484s23-8.081,29-6.04c6,2.04-0.394,22.04-8.697,33.04
+                                            c-8.303,11,5.697,13,11.697,11s17,11.372,27,0.686s12.222-18.686,6.111-39.686C60.39,212.046,61.39,210.079,43.39,207.562z"/>
+                                        </a>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // Primer caja para elegir relacion -->
+                
+                <!-- Segunda caja para elegir etapa -->
+                <!-- <section class="caja oculta" style="background-image: url(/webroot/img/backs/chicas/imagen3.jpg);">
+                    <div class="overlay"></div>
+
+                    <div class="opcion_seleccionada retroceder">
+                        <p>Etapa seleccionada</p>
+                    </div>
+
+                    <div class="contenido-caja h-100">
+                        <div class="container h-100">
+                            <div class="row h-100 justify-content-center align-content-center align-items-center">
+                                <div class="col-10 text-center">
+                                    <a href="#" class="btn btn-primary avanzar">Etapa 1</a>
+                                    <a href="#" class="btn btn-primary avanzar">Etapa 2</a>
+                                    <a href="#" class="btn btn-primary avanzar">Etapa 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+                <!-- // Segunda caja para elegir etapa -->
+                
+                <!-- Tercera caja para elegir historias -->
+                <section class="caja oculta" style="background-color: #ffffff;">
+                    <!-- <div class="overlay"></div> -->
+                    <!-- <a href="#" class="btn btn-primary avanzar">avanzar</a> -->
+                    
+                    <div class="contenido-caja h-100">
+                        <div class="container-fluid h-100">
+                            <div class="row">
+                                
+                                <nav id="menu">
+                                    <div class="contenedor-logo">
+                                        <img src="/webroot/img/logo-alma-blanco.png" class="logo-menu" alt="Alma Rosario">
+                                    </div>
+                                </nav>
+
+                                <aside id="selector-filtros">
+
+                                    <div class="filtro">
+                                        <h4>Tags</h4>
+                                        <select name="select-categoria" id="select-categoria">
+                                            <option value="viajes">Viajes</option>
+                                            <option value="musica">Música</option>
+                                            <option value="juegos">Juegos</option>
+                                            <option value="otros">Otros</option>
+                                        </select>
+                                        <hr>
+                                    </div>
+
+                                    <div class="filtro">
+                                        <h4>Relación</h4>
+                                        <select name="select-relacion" id="select-relacion">
+                                            <option value="relacion1">Relación 1</option>
+                                            <option value="relacion2">Relación 2</option>
+                                            <option value="relacion3">Relación 3</option>
+                                        </select>
+                                        <hr>
+                                    </div>
+
+                                    <div class="filtro">
+                                        <h4>Etapa</h4>
+                                        <select name="select-etapa" id="select-etapa">
+                                            <option value="etapa1">Etapa 1</option>
+                                            <option value="etapa2">Etapa 2</option>
+                                            <option value="etapa3">Etapa 3</option>
+                                        </select>
+                                        <hr>
+                                    </div>
+
+                                    <a href="#" class="btn btn-block btn-primary">Buscar</a>
+
+                                </aside>
+
+                                <main class="">
+
+                                    <div id="buscando">
+                                        <div class="lds-heart"><div></div></div>
+                                    </div>
+
+                                    <div id="resultados">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="publica" data-toggle="modal" data-target="#modalHistoria">
+                                                    Publicá tu historia
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="tarjeta">
+                                                    <h3>Título historia 1</h3>
+                                                    <p class="historia">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ut velit, magnam beatae animi quisquam dolore, sunt blanditiis commodi eveniet omnis iste quaerat aut cum! Architecto quo autem assumenda debitis.
+                                                    </p>
+                                                    <p class="by">
+                                                        <strong>Pedro</strong>, 20 años.
+                                                    </p>
+                                                </div>
+    
+                                                <div class="tarjeta">
+                                                    <h3>Título 4</h3>
+                                                    <p class="historia">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusamus ipsum, libero voluptate sunt ducimus cumque repellat officia nesciunt dolore saepe hic ad, aliquid quas, eos rem? Natus, perferendis a!
+                                                    </p>
+                                                    <p class="by">
+                                                        <strong>Jorge</strong>, 16 años.
+                                                    </p>
+                                                </div>
+                                            </div>
+    
+                                            <div class="col-sm-4">
+                                                <div class="tarjeta">
+                                                    <h3>Título historia 2</h3>
+                                                    <p class="historia">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusamus ipsum, libero voluptate sunt ducimus cumque repellat officia nesciunt dolore saepe hic ad, aliquid quas, eos rem? Natus, perferendis a!
+                                                    </p>
+                                                    <p class="by">
+                                                        <strong>Jorge</strong>, 16 años.
+                                                    </p>
+                                                </div>
+    
+                                                <div class="tarjeta">
+                                                    <h3>Título 5</h3>
+                                                    <p class="historia">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusamus ipsum, libero voluptate sunt ducimus cumque repellat officia nesciunt dolore saepe hic ad, aliquid quas, eos rem? Natus, perferendis a!
+                                                    </p>
+                                                    <p class="by">
+                                                        <strong>Jorge</strong>, 16 años.
+                                                    </p>
+                                                </div>
+                                            </div>
+    
+                                            <div class="col-sm-4">
+                                                <div class="tarjeta">
+                                                    <h3>Título historia mas largo que los demas</h3>
+                                                    <p class="historia">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ut velit, magnam beatae animi quisquam dolore, sunt blanditiis commodi eveniet omnis iste quaerat aut cum! Architecto quo autem assumenda debitis.
+                                                    </p>
+                                                    <p class="by">
+                                                        <strong>Pedro</strong>, 20 años.
+                                                    </p>
+                                                </div>
+    
+                                                <div class="tarjeta">
+                                                    <h3>Título 6</h3>
+                                                    <p class="historia">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusamus ipsum, libero voluptate sunt ducimus cumque repellat officia nesciunt dolore saepe hic ad, aliquid quas, eos rem? Natus, perferendis a!
+                                                    </p>
+                                                    <p class="by">
+                                                        <strong>Jorge</strong>, 16 años.
+                                                    </p>
+                                                </div>
+    
+                                                <div class="tarjeta">
+                                                        <h3>Título historia mas largo que los demas</h3>
+                                                        <p class="historia">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ut velit, magnam beatae animi quisquam dolore, sunt blanditiis commodi eveniet omnis iste quaerat aut cum! Architecto quo autem assumenda debitis.
+                                                        </p>
+                                                        <p class="by">
+                                                            <strong>Pedro</strong>, 20 años.
+                                                        </p>
+                                                    </div>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </main>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+                <!-- // Tercera caja para elegir historias -->
+
+            </div>
+            <!-- // Cajas filtro -->
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="modalHistoria" tabindex="-1" role="dialog" aria-labelledby="modalHistoriaTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Publicá tu historia</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <form action="" id="form-nueva-historia">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <select data-placeholder="Selecciona una relación" id="nueva-relacion" class="select2 form-control">
+                                                <option></option>
+                                                <option value="relacion1">Relación 1</option>
+                                                <option value="relacion2">Relación 2</option>
+                                                <option value="relacion3">Relación 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <select data-placeholder="Selecciona una etapa" id="nueva-etapa" class="select2 form-control">
+                                                <option></option>
+                                                <option value="etapa1">Etapa 1</option>
+                                                <option value="etapa2">Etapa 2</option>
+                                                <option value="etapa3">Etapa 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <select data-placeholder="Selecciona tags" id="nueva-tag" class="select2 form-control" multiple>
+                                                <option value="tag1">Tag 1</option>
+                                                <option value="tag2">Tag 2</option>
+                                                <option value="tag3">Tag 3</option>
+                                                <option value="tag4">Tag 4</option>
+                                                <option value="tag5">Tag 5</option>
+                                                <option value="tag6">Tag 6</option>
+                                                <option value="tag7">Tag 7</option>
+                                                <option value="tag8">Tag 8</option>
+                                                <option value="tag9">Tag 9</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <textarea name="nueva-mensaje" id="" class="form-control" style="margin: 15px 0; height:200px;" placeholder="Contanos tu historia"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="Nombre *">
+                                                </div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="Edad *">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Enviar historia</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="/webroot/js/jquery-3.2.1.min.js"></script>
+        <script src="/webroot/js/bootstrap.min.js"></script>
+        <script src="/webroot/vendor/select2/select2.full.min.js"></script>
+        <script src="/webroot/js/alma.js"></script>
+    </body>
+</html>

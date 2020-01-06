@@ -1,0 +1,58 @@
+{
+	"name": "dereuromark/cakephp-databaselog",
+	"description": "CakePHP DatabaseLog Plugin",
+	"type": "cakephp-plugin",
+	"keywords": ["cakephp", "database", "logging", "logs", "plugin"],
+	"homepage": "https://github.com/dereuromark/CakePHP-DatabaseLog/",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Nick Baker",
+			"homepage": "http://www.webtechnick.com",
+			"role": "Original author"
+		},
+		{
+			"name": "Mark Scherer",
+			"homepage": "http://www.dereuromark.de",
+			"role": "Maintainer"
+		},
+		{
+			"name": "Other contributors",
+			"homepage": "https://github.com/dereuromark/CakePHP-DatabaseLog/graphs/contributors"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/dereuromark/CakePHP-DatabaseLog/issues",
+		"source": "https://github.com/dereuromark/CakePHP-DatabaseLog/"
+	},
+	"require": {
+		"php": ">=5.6",
+		"cakephp/cakephp": "^3.5"
+	},
+	"require-dev": {
+		"fig-r/psr2r-sniffer": "dev-master",
+		"dereuromark/cakephp-tools": "dev-master"
+	},
+	"autoload": {
+		"psr-4": {
+			"DatabaseLog\\": "src/",
+			"DatabaseLog\\Test\\Fixture\\": "tests/Fixture/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"DatabaseLog\\Test\\": "tests/",
+			"Cake\\Test\\": "vendor/cakephp/cakephp/tests/",
+			"App\\": "tests/test_app/src/"
+		}
+	},
+	"scripts": {
+		"test": "php phpunit.phar",
+		"test-setup": "[ ! -f phpunit.phar ] && wget https://phar.phpunit.de/phpunit-5.7.20.phar && mv phpunit-5.7.20.phar phpunit.phar || true",
+		"test-coverage": "php phpunit.phar --log-junit tmp/coverage/unitreport.xml --coverage-html tmp/coverage --coverage-clover tmp/coverage/coverage.xml",
+		"phpstan": "phpstan analyse -c tests/phpstan.neon -l 6 src/",
+		"phpstan-setup": "cp composer.json composer.backup && composer require --dev phpstan/phpstan && mv composer.backup composer.json",
+		"cs-check": "phpcs -p --standard=vendor/fig-r/psr2r-sniffer/PSR2R/ruleset.xml --ignore=/cakephp-databaselog/vendor/,/tmp/,/logs/,/config/Migrations/ --extensions=php ./",
+		"cs-fix": "phpcbf --standard=vendor/fig-r/psr2r-sniffer/PSR2R/ruleset.xml --ignore=/cakephp-databaselog/vendor/,/tmp/,/logs/,/config/Migrations/ --extensions=php ./"
+	}
+}

@@ -1,0 +1,20 @@
+# CakePHP 3# /vendor/*
+/config/app.php
+config/app.php
+/config/conexiones.php
+tmp/debug_kit.sqlite
+/tmp/
+tmp/
+/logs/
+logs/
+/config/app.php
+config/app.php
+/config/conexiones.php
+config/conexiones.php
+config/Migrations/schema-dump-default.lock
+/config/Migrations/schema-dump-default.lock
+/webroot/img/
+webroot/img/*
+webroot/img/
+/webroot/archivos/*
+webroot/archivos/*

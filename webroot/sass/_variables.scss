@@ -1,0 +1,65 @@
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,500,600,700,800');
+
+// --- Colores --- //
+$c-negro: #000000;
+$c-blanco: #FFFFFF;
+// $c-ppal: #D0901C;
+$c-ppal: #EDA625;
+
+$c-gris1: #717175;
+$c-gris2: #ADACB2;
+$c-gris3: #D7D8DC;
+$c-gris4: #F7F7F7;
+
+$c-alerta: #ef4b4b;
+
+$c-verde-svg: #3a8645;
+$c-amarillo-svg: #f58936;
+$c-rojo-svg: #9b1d20;
+$c-seleccionado-svg: #29e346;
+
+$color-alma: #5ec2d0;
+
+
+// --- Mixins --- //
+@mixin background-cover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+// --- Tipografias --- //
+@mixin Montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+// Placeholder
+@mixin placeholder {
+     ::-webkit-input-placeholder {
+        @content;
+    }
+     :-moz-placeholder {
+        @content;
+    }
+     ::-moz-placeholder {
+        @content;
+    }
+     :-ms-input-placeholder {
+        @content;
+    }
+}
+
+@mixin sombra1 {
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
