@@ -1,39 +1,19 @@
-// @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,500,600,700,800');
 
 // --- Colores --- //
-$c-negro: #000000;
-$c-blanco: #FFFFFF;
-// $c-ppal: #D0901C;
-$c-ppal: #EDA625;
+$color-logo: #d22327;
+$color-logo-oscuro: #ac1717;
+$color-oscuro: #232323;
 
-$c-gris1: #717175;
-$c-gris2: #ADACB2;
-$c-gris3: #D7D8DC;
-$c-gris4: #F7F7F7;
+$color-borde: #aeaeae;
+$color-texto-oscuro: #504e50;
 
-$c-alerta: #ef4b4b;
-
-$c-verde-svg: #3a8645;
-$c-amarillo-svg: #f58936;
-$c-rojo-svg: #9b1d20;
-$c-seleccionado-svg: #29e346;
-
-$color-alma: #5ec2d0;
+$color-whatsapp: #25D366;
 
 
 // --- Mixins --- //
-@mixin background-cover {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 
 
 // --- Tipografias --- //
-@mixin Montserrat {
-    font-family: 'Montserrat', sans-serif;
-}
 
 
 // Placeholder
@@ -50,10 +30,6 @@ $color-alma: #5ec2d0;
      :-ms-input-placeholder {
         @content;
     }
-}
-
-@mixin sombra1 {
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 1200px) {}

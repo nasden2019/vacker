@@ -1,15 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap');
 
-@import "variables.scss";
-@import "global.scss";
+@import "variables";
+@import "global";
 
-@import "cajas.scss";
-
-/* @import "botones.scss";
-@import "forms.scss";
-
-@import "navbar.scss";
-@import "secciones.scss";
-@import "timeline.scss";
-@import "footer.scss";
- */
+@import "menues";
+@import "secciones";
+@import "forms";
+@import "footer";

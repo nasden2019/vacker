@@ -1,0 +1,64 @@
+{
+    "liveSassCompile.settings.excludeList": [
+        "/vendor/**",
+        "**/webroot/plugins/**",
+        "**/webroot/js/**",
+        "**/webroot/css/**",
+        ".vscode/**",
+        "**/mongobu/**",
+        "**/mongodata/**",
+    ],
+    "liveSassCompile.settings.formats": [
+        {
+            "extensionName": ".min.css",
+            "format": "compressed",
+            "savePath": "/webroot/css/"
+        }
+    ],
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ],
+
+    "es6-css-minify.minifyOnSave": "yes",
+    "es6-css-minify.genJSmap": true,
+    "todohighlight.exclude": [
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/dist/**",
+        "**/build/**",
+        "**/.vscode/**",
+        "**/.github/**",
+        "**/_output/**",
+        "**/*.min.*",
+        "**/*.map",
+        "**/.next/**",
+        "**/vendor/**",
+        "**/tmp/**",
+        "**/logs/**",
+        "**/plugins/**",
+        "**/reportes/**",
+        "**/mongobu/**",
+        "**/mongodata/**",
+    ],
+    "html.format.indentInnerHtml": true,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/logs/**": true,
+        "**/tmp/**": true,
+        "**/webroot/**": true,
+        "**/tests/**": true,
+        "**/mongodata/**": true,
+        "**/mongodabu/**": true
+    },
+    "html-css-class-completion.includeGlobPattern": "/webroot/.{css,html}",
+    "editor.rulers": [
+        120
+    ],
+    "cSpell.words": [
+        "syloper",
+        "vacker"
+    ]
+}

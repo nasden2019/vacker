@@ -1,0 +1,145 @@
+
+#menu-superior {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 25px;
+    user-select: none;
+    
+    img {
+        &.logo {
+            max-width: 220px;
+        }
+        &.logo_responsivo {
+            display: none;
+        }   
+    }
+    
+    nav {
+        color: white;
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+            li {
+                display: inline;
+                a {
+                    text-transform: uppercase;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    font-weight: 500;
+                    transition: color .2s ease;
+                    
+                    &:hover, &.activo {
+                        color: $color-logo;
+                        transition: color .2s ease;
+                    }
+                }
+            }
+        }
+    }
+
+    #whatsapp-menu {
+        background-color: white;
+        border-radius: 50%;
+        height: 42px;
+        display: inline-block;
+        width: 42px;
+        text-align: center;
+        font-size: 1.3rem;
+        padding-top: 4px;
+        padding-left: 3px;
+    }
+
+    #abrir-menu {
+        display: none;
+        color: white;
+        font-size: 2.5rem;
+    }
+
+    #cerrar-menu {
+        display: none;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        font-size: 2rem;
+        color: $color-texto-oscuro;
+        z-index: 2001;
+    }
+
+    &.menu-color {
+        nav {
+            color: $color-texto-oscuro
+        }
+        #whatsapp-menu {
+            background-color: $color-whatsapp;
+            color: white;
+        }
+        #abrir-menu {
+            color: inherit;
+        }
+    }
+
+    /* &.menu-abierto {
+        #cerrar-menu {
+            display: block;
+        }
+    } */
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+    #menu-superior {
+        nav {
+            //display: none;
+            visibility: hidden;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding: 100px 0;
+            background-color: white;
+            color: $color-texto-oscuro;
+            z-index: 2000;
+            color: inherit;
+            transition: visibility 0s, transform .2s ease, opacity .2s ease;
+            transform: scale(0.8);
+            opacity: .6;
+            li {
+                display: block !important;
+                a {
+                    display: block;
+                    font-size: 1.8rem;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        #abrir-menu {
+            display: inline-block;
+        }
+
+        &.menu-abierto {
+            #cerrar-menu {
+                display: block;
+            }
+            nav {
+                //display: block;
+                visibility: visible;
+                transition: visibility .2s ease, transform .2s ease, opacity .2s ease;
+                opacity: 1;
+                transform: scale(1);
+            }
+        }        
+    }
+}
+
+@media (max-width: 768px) {
+   
+}
+
+@media (max-width: 576px) {}

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="description" content="Template Vacker">
+        <meta name="author" content="Syloper">
+
+        <title>Terrenos | Template Vacker</title>
+
+        <!-- <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+        <meta name="application-name" content="&nbsp;" />
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="mstile-310x310.png" /> -->
+
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="/webroot/vendor/bootstrap-4.4.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/webroot/css/main.min.css" />
+    </head>
+
+    <body>
+
+        <div id="contenedor-sitio">    
+         
+            <div class="loader"></div>
+
+            <div id="menu-superior" class="menu-color">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto">
+                            <a href="#!">
+                                <img class="logo" src="/webroot/img/template/isologo-color-horizontal.png" alt="">
+                                <img class="logo_responsivo" src="/webroot/img/template/isologo-color.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="col-auto">
+                            <nav class="text-center">
+                                <a href="#!" id="cerrar-menu">
+                                    <i class="ion-close"></i>
+                                </a>
+                                <ul>
+                                    <li><a href="#!">Propiedades</a></li>
+                                    <li><a href="#!" class="activo">Terrenos</a></li>
+                                    <li><a href="#!">Tasación</a></li>
+                                    <li><a href="#!">Contactános</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                        <div class="col-auto text-center text-lg-right d-flex align-items-center">
+                            <a href="#!" id="abrir-menu" class="mr-3">
+                                <i class="ion-navicon"></i>
+                            </a>
+                            <a href="#!" id="whatsapp-menu">
+                                <i class="ion-social-whatsapp-outline"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="seccion-blanca sin-padding" id="seccion-terrenos">
+                
+                <div class="container intro-pagina">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h1>Terrenos en venta</h1>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <a href="#!" class="btn">Ver en el mapa</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            
+
+            <section class="sin-padding" id="seccion-busqueda">
+                
+                <div class="container">
+                    <div class="row">
+
+                        <!-- Filtros -->
+                        <div class="col-sm-3">
+                            <h2>Búsqueda avanzada</h2>
+                            <div class="box box-filtros-seleccionados">
+                                <h3>Filtros</h3>
+                                <ul>
+                                    <li><a href="#!">En construcción</a></li>
+                                    <li><a href="#!">Gas natural</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="box box-precio">
+                                <h3>Precio</h3>
+                                <p>
+                                    <input type="radio" id="checkbox1" name="moneda">
+                                    <label for="checkbox1"><span></span>$</label>
+                                </p>
+                                <p>
+                                    <input type="radio" id="checkbox2" name="moneda">
+                                    <label for="checkbox2"><span></span>U$S</label>
+                                </p>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="Desde $" >
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="Hasta $" >
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-block">Aplicar</button>
+                            </div>
+
+                            <div class="box box-lista">
+                                <h3>Localidad</h3>
+                                <ul>
+                                    <li><a href="#!">Alvear</a></li>
+                                    <li><a href="#!">Pérez</a></li>
+                                    <li><a href="#!">Villa Amelia</a></li>
+                                    <li><a href="#!">Pueblo Esther</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="box box-lista">
+                                <h3>Etapa</h3>
+                                <ul>
+                                    <li><a href="#!">En construcción</a></li>
+                                    <li><a href="#!">Terminado</a></li>
+                                    <li><a href="#!">Más de 5 años</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="box box-lista">
+                                <h3>Superficie</h3>
+                                <ul>
+                                    <li><a href="#!">Desde 240m2 a 300m2</a></li>
+                                    <li><a href="#!">Desde 300m2 a 420m2</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="box box-lista">
+                                <h3>Características</h3>
+                                <ul>
+                                    <li><a href="#!">Red de agua potable</a></li>
+                                    <li><a href="#!">Alumbrado público</a></li>
+                                    <li><a href="#!">Red eléctrica</a></li>
+                                    <li><a href="#!">Forestación planificada</a></li>
+                                    <li><a href="#!">Estabilizado de escoria</a></li>
+                                    <li><a href="#!">Gas natural</a></li>
+                                    <li><a href="#!">Cordón cuneta</a></li>
+                                    <li><a href="#!">Cloacas</a></li>
+                                    <li><a href="#!">Calles pavimentadas</a></li>
+                                    <li><a href="#!">WIFI</a></li>
+                                    <li><a href="#!">Espacios recreativos</a></li>
+                                    <li><a href="#!">Circuito deportivo</a></li>
+                                    <li><a href="#!">Gimnasio</a></li>
+                                    <li><a href="#!">Cámaras de seguridad</a></li>
+                                    <li><a href="#!">Isla de residuos</a></li>
+                                    <li><a href="#!">Bicisenda</a></li>
+                                    <li><a href="#!">Mobiliario urbano</a></li>
+                                    <li><a href="#!">Plaza para mascotas</a></li>
+                                    <li><a href="#!">Paseo comercial</a></li>
+                                    <li><a href="#!">Totem solar</a></li>
+                                    <li><a href="#!">En construcción</a></li>
+                                    <li><a href="#!">Posesión inmediata</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!-- // Filtros -->
+                        
+                        <!-- Resultados -->
+                        <div class="col-sm-9">
+                            <div class="contenedor-resultados">
+                                <div class="row">
+
+                                    <div class="col-sm-6">
+                                        <div class="resultado">
+                                            <div class="imagen">
+                                                <a href="#!">
+                                                    <span>Ampliar</span>
+                                                </a>
+                                                <img src="/webroot/img/template/back1.jpg" alt="Resultado 1" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <span>Desde 300m2</span>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <span>USD 24.750</span>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span>ECOPUEBLO | ALVEAR</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-sm-6">
+                                        <div class="resultado">
+                                            <div class="imagen">
+                                                <a href="#!">
+                                                    <span>Ampliar</span>
+                                                </a>
+                                                <img src="/webroot/img/template/back2.jpg" alt="Resultado 2" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <span>Desde 300m2</span>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <span>USD 24.750</span>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span>ECOVIDA | VILLA AMELIA</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-sm-6">
+                                        <div class="resultado">
+                                            <div class="imagen">
+                                                <a href="#!">
+                                                    <span>Ampliar</span>
+                                                </a>
+                                                <img src="/webroot/img/template/back3.jpg" alt="Resultado 3" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <span>Desde 300m2</span>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <span>USD 24.750</span>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span>ECOTIERRA | PUEBLO ESTHER</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-sm-6">
+                                        <div class="resultado">
+                                            <div class="imagen">
+                                                <a href="#!">
+                                                    <span>Ampliar</span>
+                                                </a>
+                                                <img src="/webroot/img/template/back4.jpg" alt="Resultado 4" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <span>Desde 300m2</span>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <span>USD 24.750</span>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span>LOS LAPACHOS | PÉREZ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="resultado">
+                                            <div class="imagen">
+                                                <a href="#!">
+                                                    <span>Ampliar</span>
+                                                </a>
+                                                <img src="/webroot/img/template/back1.jpg" alt="Resultado 1" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <span>Desde 300m2</span>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <span>USD 24.750</span>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span>LOS LAPACHOS II | PÉREZ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-sm-6">
+                                        <div class="resultado">
+                                            <div class="imagen">
+                                                <a href="#!">
+                                                    <span>Ampliar</span>
+                                                </a>
+                                                <img src="/webroot/img/template/back2.jpg" alt="Resultado 2" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <span>Desde 300m2</span>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <span>USD 24.750</span>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span>LOS TRONCALES | ALVEAR</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Resultados -->
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="seccion-blanca" id="seccion-form-contacto">
+                <div class="container">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-12">
+                            <h2 class="titulo-seccion">Contacto</h2>
+                        </div>
+                    </div>
+                    
+                    <form action="" id="form-contacto-inicio">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-4">
+                                <input class="form-control" type="text" placeholder="Nombre y apellido">
+                                <input class="form-control" type="text" placeholder="E-mail">
+                                <input class="form-control" type="text" placeholder="Teléfono">
+                            </div>
+                            <div class="col-sm-4">
+                                <textarea name="" id="" class="form-control" placeholder="Dejanos tu mensaje"></textarea>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mt-1">
+                            <div class="col-sm-8 text-right">
+                                <button type="submit" class="btn">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <div class="triangulo noselect text-center text-md-left">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="/webroot/img/template/triangulo.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="oscuro">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3 mb-4 mb-sm-0 text-center">
+                            <a href="#!">
+                                <img src="/webroot/img/template/logo-footer.svg" alt="Vacker" class="logo-footer">
+                            </a>
+                        </div>
+
+                        <div class="col-sm-3 mb-4 mb-sm-0">
+                            <h3 class="titulo-footer">Contacto</h3>
+                            <ul>
+                                <li><a href="#!">(0341) 301 5966</a></li>
+                                <li>Moreno 1801, Piso 2</li>
+                                <li>Rosario, Santa fe</li>
+                                <li><a href="#!">info@vacker.com</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3 mb-4 mb-sm-0">
+                            <h3 class="titulo-footer">Seguinos</h3>
+                            <ul class="redes">
+                                <li><a href="#!"><i class="ion-social-whatsapp-outline"></i></a></li>
+                                <li><a href="#!"><i class="ion-social-facebook-outline"></i></a></li>
+                                <li><a href="#!"><i class="ion-social-instagram-outline"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3 mb-4 mb-sm-0">
+                            <h3 class="titulo-footer">Menú</h3>
+                            <ul class="menu">
+                                <li><a href="#!">Propiedades</a></li>
+                                <li><a href="#!">Terrenos</a></li>
+                                <li><a href="#!">Tasación</a></li>
+                                <li><a href="#!">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <a id="scroll-top" href="#!">
+                <i class="ion-chevron-up"></i>
+            </a>
+
+        </div>
+
+        <script type="text/javascript" src="/webroot/js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="/webroot/vendor/bootstrap-4.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/webroot/js/vacker.min.js"></script>
+
+    </body>
+</html>
