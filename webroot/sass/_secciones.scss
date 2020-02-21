@@ -115,15 +115,61 @@ section {
             }
 
             &.box-filtros-seleccionados {
-                background-color: $color-logo-oscuro;
-                padding: 30px;
+                background-color: $color-logo;
+                padding: 30px 20px 20px;
                 h3 {
                     color: white;
                     text-align: center;
                     margin-bottom: 12px;
                 }
+                ul {
+                    li {
+                        a {
+                            display: block;
+                            background-color: white;
+                            color: $color-texto-oscuro;
+                            padding: 6px 10px;
+                            font-weight: 500;
+                            font-size: .8rem;
+                            i {
+                                margin-right: 5px;
+                            }
+
+                        }
+                        &:not(:last-child) {
+                            a{
+                                margin-bottom: 8px;
+                            }
+                        }
+                    }
+                }
             }
-            &.box-precio {}
+            &.box-precio {
+                .form-control {
+                    border-radius: 0;
+                    border-color: $color-borde;
+                    margin-bottom: 10px;
+                    height: calc(2em + .75rem + 2px);
+        
+                    &:focus {
+                        box-shadow: 0 0 0 .2rem rgba(255, 0, 21, 0.25);
+                    }
+        
+                }
+
+                button {
+                    background-color: $color-logo;
+                    color: white;
+                    border-radius: 0;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    padding: 0.5rem 3rem;
+                    &:focus {
+                        box-shadow: 0 0 0 .2rem rgba(255, 0, 21, 0.25);
+                    }
+                }
+            }
             &.box-lista {}
             &.box-lista {}
         }

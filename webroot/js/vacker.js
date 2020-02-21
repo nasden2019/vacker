@@ -20,11 +20,12 @@ _iniciar();
 
 // Apenas se inicia todo
 $.Vacker.menu.iniciar();
+$.Vacker.scrollTop.iniciar();
 
 // Cuando el sitio se cargo por completo
 $(window).on("load", function () {
 
-    $.Vacker.select2.iniciar();
+    // $.Vacker.select2.iniciar();
 
 });
 
@@ -105,6 +106,18 @@ function _iniciar() {
         }
     };
 
+    $.Vacker.scrollTop = {
+        iniciar: function () {
+            if ($('.scroll-top').length) {
+                $('.scroll-top').each(function(){
+                    $(this).click(function(){ 
+                        $('html,body').animate({ scrollTop: 0 }, 300);
+                        return false; 
+                    });
+                });
+            }
+        }
+    }
 
 };
 
