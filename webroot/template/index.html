@@ -58,8 +58,8 @@
                                     <i class="ion-close"></i>
                                 </a>
                                 <ul>
-                                    <li><a href="#!">Propiedades</a></li>
-                                    <li><a href="#!">Terrenos</a></li>
+                                    <li><a href="index.html">Propiedades</a></li>
+                                    <li><a href="terrenos.html">Terrenos</a></li>
                                     <li><a href="#!">Tasación</a></li>
                                     <li><a href="#!">Contactános</a></li>
                                 </ul>
@@ -80,6 +80,7 @@
 
             <section class="seccion-imagen d-flex justify-content-center align-items-center" id="header-home"
                 style="background-image: url(/webroot/img/template/back1.jpg);">
+                <!-- para darle tono oscuro sobre la img -->
                 <div class="overlay_imagen"></div>
 
                 <div class="info">
@@ -174,38 +175,40 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- d-block (display in mobile) / d-md-none (not display in desktop) -->
+                        <div class="text-center d-block d-md-none">
+                            <button type="submit" class="btn-home-mobile bg-danger text-white my-4 my-md-0">Ver
+                                mas</button>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section class="seccion-blanca" id="seccion-form-contacto">
+            <section class="seccion-blanca d-none d-md-block" id="seccion-form-contacto">
                 <div class="container">
                     <div class="row justify-content-center text-center">
-                        <div class="col-12 d-none">
+                        <div class="col-12">
                             <h2 class="titulo-seccion">Contacto</h2>
                         </div>
                     </div>
 
                     <form action="" id="form-contacto-inicio">
                         <div class="row justify-content-center">
-                            <div class="col-sm-4 d-none">
+                            <div class="col-sm-4">
                                 <input class="form-control" type="text" placeholder="Nombre y apellido">
                                 <input class="form-control" type="text" placeholder="E-mail">
                                 <input class="form-control" type="text" placeholder="Teléfono">
                             </div>
-                            <div class="col-sm-4 d-none">
+                            <div class="col-sm-4">
                                 <textarea name="" id="" class="form-control"
                                     placeholder="Dejanos tu mensaje"></textarea>
                             </div>
                         </div>
                         <div class="row justify-content-center mt-1">
                             <!-- para mobile text-center/ a partir de md: text-right-->
-                            <div class="col-sm-8 text-md-right text-center">
+                            <div class="col-sm-8 text-md-right text-center d-none d-md-block">
                                 <button type="submit" class="btn">Enviar</button>
                             </div>
-                            <!-- <div class="text-md-right text-center">
-                                <button type="submit" class="btn">Ver mas</button>
-                            </div> -->
                         </div>
                     </form>
                 </div>
@@ -230,7 +233,7 @@
                             </a>
                         </div>
 
-                        <div class="col-6 col-sm-3 mb-4 mb-sm-0 ml-4 order-2">
+                        <div class="col-6 col-sm-3 mb-4 mb-sm-0 order-2 ml-4 ml-md-0">
                             <h3 class="titulo-footer d-none d-md-block">Contacto</h3>
                             <ul>
                                 <li><a href="#!">(0341) 301 5966</a></li>
@@ -241,7 +244,7 @@
                         </div>
 
                         <div class="col-6 col-sm-3 mb-4 mb-sm-0 d-md-block">
-                            <h3 class="titulo-footer d-none">Seguinos</h3>
+                            <h3 class="titulo-footer d-md-block d-none">Seguinos</h3>
                             <ul class="redes">
                                 <li><a href="#!"><i class="ion-social-whatsapp-outline"></i></a></li>
                                 <li><a href="#!"><i class="ion-social-facebook-outline"></i></a></li>
