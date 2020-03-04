@@ -8,11 +8,27 @@
 @import "forms";
 @import "footer";
 @import 'botones';
+@import 'inputs';
 
+// seccion tasacion
 .h2-tasacion {
     margin: 7rem 0 0 13.5rem;
+
+    .linea {
+        margin-top: -2rem;
+    }
 }
 
-.linea {
-    margin-top: -2rem;
+// seccion Ecotierra
+.h2-tupropiedad,
+.span-tupropiedad {
+    margin: 5rem 0 0 1.5rem;
+    color: $color-logo-oscuro;
+    font-weight: 700;
+    text-transform: uppercase;
 }
+
+// .ecotierra {
+//     max-width: 100%;
+//     max-height: 100%;
+// }
