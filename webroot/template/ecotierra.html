@@ -69,24 +69,28 @@
                 </div>
             </section>
 
-            <hr width="56%" color="grey" size="5" class="mb-md-5 mt-md-0" />
+            <hr width="56%" color="grey" size="5" class="mb-md-5 mt-md-0 d-none d-md-block" />
 
-            <section class="seccion-imagen d-flex justify-content-center align-items-center" id="header-home"
+            <!-- IMPORTANTE: QUITARLE EL PADDING (p-0) AL SECTION Y AL CONTAINER-FLUID PARA Q LAS IMGS TENGAN EL MISMO SIZE
+            Y NO PEGUEN SALTOS-->
+            <section class="seccion-imagen d-flex justify-content-center align-items-center p-0" id="header-home"
                 style="background-image: url(/webroot/img/template/back1.jpg);">
-                <div class="container-fluid">
+                <div class="container-fluid p-0">
                     <div class="row">
                         <div class="col-md-12">
                             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img class="ecotierra-images" src=/webroot/img/template/back2.jpg;> </div> <div
-                                            class="carousel-item">
-                                        <img class="ecotierra-images" src=/webroot/img/template/back3.jpg
-                                            alt="Second slide">
+                                        <img src="https://parquesalegres.org/wp-content/uploads/2019/03/parque_urbano_del_sur_2-768x510.jpg"
+                                            class="d-block w-100" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="ecotierra-images" src=/webroot/img/template/back4.jpg
-                                            alt="Third slide">
+                                        <img src="https://parquesalegres.org/wp-content/uploads/2019/03/RS622415_sm-parque-las-mantecas-01-scr-768x512.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://parquesalegres.org/wp-content/uploads/2019/03/PARQUE-URBANO-JUAN-RAFAEL-MORA-PORRAS-008-768x576.jpg"
+                                            class="d-block w-100" alt="...">
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
@@ -105,213 +109,163 @@
                 </div>
             </section>
 
+            <!-- FIN SLIDER -->
+
+
             <!-- CARACTERISTICAS / COLUMNA IZQUIERDA -->
-            <!-- <section class="seccion-blanca sin-padding" id="seccion-terrenos">
-                <div class="container intro-pagina">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2>Características</h2>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <hr width="36%" color="grey" size="5" class="linea" />
-
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="d-flex">
-                                <span class="text-danger">></span>
-                                Estado: en construcción
-                            </div>
-                            <div class="d-flex">
-                                <span class="text-danger">></span>
-                                Superficie: desde 300 M2
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-
             <section class="sin-padding" id="seccion-busqueda">
                 <div class="container">
                     <div class="row">
                         <!-- Filtros -->
-                        <div class="col-md-8">
-                            <h2>Búsqueda avanzada</h2>
-                            <div class="box box-filtros-seleccionados">
-                                <h3>Filtros</h3>
-                                <ul>
-                                    <li>
-                                        <a href="#!"><i class="ion-close"></i> En construcción</a>
-                                    </li>
-                                    <li>
-                                        <a href="#!"><i class="ion-close"></i> Gas natural</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="box box-precio">
-                                <h3>Precio</h3>
-                                <div class="row">
-                                    <div class="col-auto">
-                                        <input type="radio" id="checkbox1" name="moneda" />
-                                        <label for="checkbox1"><span></span>$</label>
-                                    </div>
-                                    <div class="col-auto">
-                                        <input type="radio" id="checkbox2" name="moneda" />
-                                        <label for="checkbox2"><span></span>U$S</label>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-6">
-                                        <input type="text" class="form-control" placeholder="Desde $" />
-                                    </div>
-                                    <div class="col-6">
-                                        <input type="text" class="form-control" placeholder="Hasta $" />
-                                    </div>
-                                </div>
-
-                                <button class="btn btn-block">Aplicar</button>
-                            </div>
-
+                        <div class="col-md-7">
+                            <h2>Características</h2>
                             <div class="row">
-                                <div class="col-6 box box-lista">
-                                    <h3>Localidad</h3>
-                                    <ul>
-                                        <li><a href="#!">Alvear</a></li>
-                                        <li><a href="#!">Pérez</a></li>
-                                        <li><a href="#!">Villa Amelia</a></li>
-                                        <li><a href="#!">Pueblo Esther</a></li>
-                                    </ul>
+                                <div class="col-6 mt-md-4 mt-2">
+                                    <span class="text-danger">></span>
+                                    Estado: en construcción </div>
+                                <div class="col-6 mt-md-4 mt-2">
+                                    <span class="text-danger">></span>
+                                    Superficie: desde 300 M2
                                 </div>
 
-                                <div class="col-6 box box-lista">
-                                    <h3>Etapa</h3>
-                                    <ul>
-                                        <li><a href="#!">En construcción</a></li>
-                                        <li><a href="#!">Terminado</a></li>
-                                        <li><a href="#!">Más de 5 años</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="col-6 box box-lista">
-                                    <h3>Superficie</h3>
-                                    <ul>
-                                        <li><a href="#!">Desde 240m2 a 300m2</a></li>
-                                        <li><a href="#!">Desde 300m2 a 420m2</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="col-7 box box-lista d-none d-md-block">
-                                    <h3>Características</h3>
-                                    <ul>
-                                        <li><a href="#!">Red de agua potable</a></li>
-                                        <li><a href="#!">Alumbrado público</a></li>
-                                        <li><a href="#!">Red eléctrica</a></li>
-                                        <li><a href="#!">Forestación planificada</a></li>
-                                        <li><a href="#!">Estabilizado de escoria</a></li>
-                                        <li><a href="#!">Gas natural</a></li>
-                                        <li><a href="#!">Cordón cuneta</a></li>
-                                        <li><a href="#!">Cloacas</a></li>
-                                        <li><a href="#!">Calles pavimentadas</a></li>
-                                        <li><a href="#!">WIFI</a></li>
-                                        <li><a href="#!">Espacios recreativos</a></li>
-                                        <li><a href="#!">Circuito deportivo</a></li>
-                                        <li><a href="#!">Gimnasio</a></li>
-                                        <li><a href="#!">Cámaras de seguridad</a></li>
-                                        <li><a href="#!">Isla de residuos</a></li>
-                                        <li><a href="#!">Bicisenda</a></li>
-                                        <li><a href="#!">Mobiliario urbano</a></li>
-                                        <li><a href="#!">Plaza para mascotas</a></li>
-                                        <li><a href="#!">Paseo comercial</a></li>
-                                        <li><a href="#!">Totem solar</a></li>
-                                        <li><a href="#!">En construcción</a></li>
-                                        <li><a href="#!">Posesión inmediata</a></li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-md-4">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-md-5">
-                                        <h2 class="titulo-seccion">Mas información?</h2>
-                                        <h2 class="titulo-seccion">Escribinos</h2>
-                                    </div>
-                                </div>
 
-                                <form action="" id="form-contacto-inicio">
-                                    <div class="row justify-content-right">
-                                        <div class="col-sm-">
-                                            <input class="form-control inputs" type="text"
-                                                placeholder="Nombre y apellido">
-                                        </div>
-                                        <div class="col-sm-">
-                                            <input class="form-control inputs" type="text" placeholder="E-mail">
-                                        </div>
-                                        <div class="col-sm-">
-                                            <input class="form-control inputs" type="text" placeholder="Teléfono">
-                                        </div>
-                                        <div class="col-sm-">
-                                            <textarea name="" id="" class="form-control " rows="8" cols=""
-                                                placeholder="Dejanos tu mensaje" style="width: 437px;"></textarea>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="row justify-content-center mt-1">
-                                <!-- para mobile text-center/ a partir de md: text-right-->
-                                <div class="col-sm-5 text-md-right text-center d-none d-md-block">
-                                    <button type="submit" class="btn">Enviar</button>
-                                </div>
-                            </div>
-                            </form>
+                    <div class="row">
+                        <div class="col-md-6 box box-lista mt-md-5 mt-4">
+                            <h3>Descripción</h3>
+                            <hr width="126%" color="grey" size="5" class="mb-md-5 mt-md-0" />
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 box box-lista">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut illum sunt ipsam,
+                            reprehenderit quibusdam, laborum minima quod maxime deserunt numquam corporis eaque.
+                            Dolor assumenda earum obcaecati? Ipsam cumque iure impedit.</p>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-4 box box-lista d-none d-md-block mt-md-5">
+                            <h3>Servicios</h3>
+                            <ul>
+                                <li><a href="#!"><span class="text-danger">></span> Red de agua potable</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> Alumbrado público</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> Red eléctrica</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> Forestación planificada</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> Estabilizado de escoria</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> Gas natural</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> Cordón cuneta</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> Cloacas</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> Calles pavimentadas</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> WIFI</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> Espacios recreativos</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> Circuito deportivo</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 box box-lista d-none d-md-block mt-md-5">
+                            <h3>Ecoservicios</h3>
+                            <ul>
+                                <li><a href="#!"><span class="text-danger">></span> Espacios verdes y recreativos</a>
+                                </li>
+                                <li><a href="#!"><span class="text-danger">></span> Circuito deportivo</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> Cámaras de seguridad</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> Bicisenda</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> Estabilizado de escoria</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> Gas natural</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> Cordón cuneta</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> Cloacas</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> Calles pavimentadas</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> WIFI</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> Espacios recreativos</a></li>
+                                <li><a href="#!"><span class="text-danger">></span> Circuito deportivo</a></li>
+                            </ul>
                         </div>
                     </div>
 
 
 
-                    <!--------- <h3> caracteristiscas en MOBILE ---------->
-
-                    <div class="dropdown d-md-none btn mx-auto my-3  my-md-none">
-                        <button class="btn btn-caracteristicas dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Mas Características
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a href="#!">Red de agua potable</a></li>
-                            <li><a href="#!">Alumbrado público</a></li>
-                            <li><a href="#!">Red eléctrica</a></li>
-                            <li><a href="#!">Forestación planificada</a></li>
-                            <li><a href="#!">Estabilizado de escoria</a></li>
-                            <li><a href="#!">Gas natural</a></li>
-                            <li><a href="#!">Cordón cuneta</a></li>
-                            <li><a href="#!">Cloacas</a></li>
-                            <li><a href="#!">Calles pavimentadas</a></li>
-                            <li><a href="#!">WIFI</a></li>
-                            <li><a href="#!">Espacios recreativos</a></li>
-                            <li><a href="#!">Circuito deportivo</a></li>
-                            <li><a href="#!">Gimnasio</a></li>
-                            <li><a href="#!">Cámaras de seguridad</a></li>
-                            <li><a href="#!">Isla de residuos</a></li>
-                            <li><a href="#!">Bicisenda</a></li>
-                            <li><a href="#!">Mobiliario urbano</a></li>
-                            <li><a href="#!">Plaza para mascotas</a></li>
-                            <li><a href="#!">Paseo comercial</a></li>
-                            <li><a href="#!">Totem solar</a></li>
-                            <li><a href="#!">En construcción</a></li>
-                            <li><a href="#!">Posesión inmediata</a></li>
+                    <!-- FORM -->
+                    <div class="col-md-4">
+                        <!-- <div class="container"> -->
+                        <div class="row justify-content-center">
+                            <!-- <div class="col-md-5"> -->
+                            <h2 class="titulo-seccion">Mas información?</h2>
+                            <h2 class="titulo-seccion">Escribinos</h2>
                         </div>
                     </div>
 
-                    <!-- // Filtros -->
+                    <form action="" id="form-contacto-inicio">
+                        <div class="row justify-content-right">
+                            <div class="col-sm-">
+                                <input class="form-control inputs" type="text" placeholder="Nombre y apellido">
+                            </div>
+                            <div class="col-sm-">
+                                <input class="form-control inputs" type="text" placeholder="E-mail">
+                            </div>
+                            <div class="col-sm-">
+                                <input class="form-control inputs" type="text" placeholder="Teléfono">
+                            </div>
+                            <div class="col-sm-">
+                                <textarea name="" id="" class="form-control " rows="8" cols=""
+                                    placeholder="Dejanos tu mensaje" style="width: 437px;"></textarea>
+                            </div>
+                        </div>
+                </div>
+                <div class="row justify-content-center mt-1">
+                    <!-- para mobile text-center/ a partir de md: text-right-->
+                    <div class="col-sm-5 text-md-right text-center d-none d-md-block">
+                        <button type="submit" class="btn">Enviar</button>
+                    </div>
+                </div>
+                </form>
+        </div>
+        </div>
+        </div>
 
-                    <!-- Resultados -->
-                    <!-- <div class="col-sm-9">
+
+
+        <!--------- <h3> caracteristiscas en MOBILE ---------->
+
+        <div class="dropdown d-md-none btn mx-auto my-3  my-md-none">
+            <button class="btn btn-caracteristicas dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Mas Características
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a href="#!">Red de agua potable</a></li>
+                <li><a href="#!">Alumbrado público</a></li>
+                <li><a href="#!">Red eléctrica</a></li>
+                <li><a href="#!">Forestación planificada</a></li>
+                <li><a href="#!">Estabilizado de escoria</a></li>
+                <li><a href="#!">Gas natural</a></li>
+                <li><a href="#!">Cordón cuneta</a></li>
+                <li><a href="#!">Cloacas</a></li>
+                <li><a href="#!">Calles pavimentadas</a></li>
+                <li><a href="#!">WIFI</a></li>
+                <li><a href="#!">Espacios recreativos</a></li>
+                <li><a href="#!">Circuito deportivo</a></li>
+                <li><a href="#!">Gimnasio</a></li>
+                <li><a href="#!">Cámaras de seguridad</a></li>
+                <li><a href="#!">Isla de residuos</a></li>
+                <li><a href="#!">Bicisenda</a></li>
+                <li><a href="#!">Mobiliario urbano</a></li>
+                <li><a href="#!">Plaza para mascotas</a></li>
+                <li><a href="#!">Paseo comercial</a></li>
+                <li><a href="#!">Totem solar</a></li>
+                <li><a href="#!">En construcción</a></li>
+                <li><a href="#!">Posesión inmediata</a></li>
+            </div>
+        </div>
+
+        <!-- // Filtros -->
+
+        <!-- Resultados -->
+        <!-- <div class="col-sm-9">
                             <div class="contenedor-resultados">
                                 <div class="row">
                                     <div class="col-sm-6">
@@ -478,8 +432,7 @@
                                 </div>
                             </div>
                         </div> -->
-                </div>
-        </div>
+
         </section>
 
         <!-- CONTACTO / COLUMNA DERECHA-->
