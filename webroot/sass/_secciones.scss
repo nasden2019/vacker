@@ -7,7 +7,7 @@ section {
 
     // 
     &.seccion-imagen {
-        
+
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -41,16 +41,16 @@ section {
                 font-weight: 800;
                 font-size: 1rem;
                 transition: background-color .3s ease, color .3s ease;
-                
+
                 &:hover {
-                    color: $color-logo;   
+                    color: $color-logo;
                     background-color: white;
                     transition: background-color .3s ease, color .3s ease;
                 }
             }
         }
     }
-    
+
     // 
     &.seccion-blanca {
         background-color: white;
@@ -62,7 +62,7 @@ section {
             margin-bottom: 50px;
         }
     }
-    
+
     // 
     &#seccion-terrenos {
         background-color: white;
@@ -77,17 +77,17 @@ section {
             margin: 0;
         }
     }
-    
+
     // 
     &#seccion-busqueda {
         background-color: white;
         padding-top: 50px;
-       
+
 
         h2:first-of-type {
             text-transform: uppercase;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 2rem;
         }
 
         //filtros
@@ -107,21 +107,22 @@ section {
                 padding: 0;
                 margin: 0;
                 list-style: none;
+
                 li {
-                    a {
-                        
-                    }
+                    a {}
                 }
             }
 
             &.box-filtros-seleccionados {
                 background-color: $color-logo;
                 padding: 30px 20px 20px;
+
                 h3 {
                     color: white;
                     text-align: center;
                     margin-bottom: 12px;
                 }
+
                 ul {
                     li {
                         a {
@@ -131,30 +132,33 @@ section {
                             padding: 6px 10px;
                             font-weight: 500;
                             font-size: .8rem;
+
                             i {
                                 margin-right: 5px;
                             }
 
                         }
+
                         &:not(:last-child) {
-                            a{
+                            a {
                                 margin-bottom: 8px;
                             }
                         }
                     }
                 }
             }
+
             &.box-precio {
                 .form-control {
                     border-radius: 0;
                     border-color: $color-borde;
                     margin-bottom: 10px;
                     height: calc(2em + .75rem + 2px);
-        
+
                     &:focus {
                         box-shadow: 0 0 0 .2rem rgba(255, 0, 21, 0.25);
                     }
-        
+
                 }
 
                 button {
@@ -165,12 +169,15 @@ section {
                     text-transform: uppercase;
                     font-weight: 600;
                     padding: 0.5rem 3rem;
+
                     &:focus {
                         box-shadow: 0 0 0 .2rem rgba(255, 0, 21, 0.25);
                     }
                 }
             }
+
             &.box-lista {}
+
             &.box-lista {}
         }
 
@@ -183,6 +190,7 @@ section {
                 .imagen {
                     position: relative;
                     background-color: $color-logo-oscuro;
+
                     a {
                         position: absolute;
                         top: 0;
@@ -194,6 +202,7 @@ section {
                         display: flex;
                         justify-content: center;
                         align-items: center;
+
                         span {
                             transform: scale(.8);
                             opacity: 0;
@@ -203,6 +212,7 @@ section {
                             transition: opacity .2s ease, transform .2s ease;
                         }
                     }
+
                     img {
                         width: 100%;
                         height: 300px;
@@ -219,19 +229,21 @@ section {
                                 transition: opacity .2s ease, transform .2s ease;
                             }
                         }
+
                         img {
                             opacity: .4;
                         }
                     }
                 }
+
                 .info {
                     margin-top: 10px;
+
                     hr {
                         margin: 5px 0;
                     }
-                    span {
 
-                    }
+                    span {}
                 }
             }
         }
@@ -246,6 +258,7 @@ section {
             background: #fff;
             color: $color-logo;
         }
+
         ::-moz-selection {
             background: #fff;
             color: $color-logo;
@@ -283,7 +296,7 @@ section {
                 height: 100%;
                 z-index: 10;
             }
-            
+
             img {
                 position: absolute;
                 top: 0;
@@ -294,11 +307,11 @@ section {
                 opacity: .4;
                 transition: opacity .3s ease;
             }
-            
+
             .info {
                 position: relative;
             }
-            
+
             &:hover {
                 img {
                     opacity: .1;
@@ -308,4 +321,11 @@ section {
         }
     }
 
+}
+
+// 
+@media(max-width: 522px) {
+    .sin-padding {
+        margin-top: -180px !important;
+    }
 }
