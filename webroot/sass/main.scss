@@ -9,8 +9,9 @@
 @import "footer";
 @import 'botones';
 @import 'inputs';
+@import 'headings';
 
-// seccion tasacion
+// seccion tasacion 
 .h2-tasacion {
     margin: 7rem 0 0 13.5rem;
 
@@ -26,11 +27,8 @@
     color: $color-logo-oscuro;
     font-weight: 700;
     text-transform: uppercase;
-}
 
-// seccion eco tierra form
-.sin-padding #seccion-busqueda .h2-form-ecotierra {
-    color: $color-logo-oscuro;
-    font-size: 5rem !important;
-    font-weight: 700;
+    .p-ecotierra {
+        margin-bottom: 5rem !important;
+    }
 }

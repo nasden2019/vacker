@@ -88,6 +88,16 @@ section {
             text-transform: uppercase;
             font-weight: 700;
             font-size: 2rem;
+
+        }
+
+        @media screen and(max-width: 700px) {
+            h2:first-of-type {
+                font-weight: 500;
+                text-transform: none;
+                font-size: 1.8rem;
+                margin-top: -50px;
+            }
         }
 
         //filtros
@@ -323,9 +333,16 @@ section {
 
 }
 
+// ecotierra caracteristicas mobile
+@media(max-width: 522px) {
+    .sin-padding-ecotierra {
+        margin-top: -180px !important;
+    }
+}
+
 // 
 @media(max-width: 522px) {
-    .sin-padding {
-        margin-top: -180px !important;
+    .sin-padding-terrenos {
+        margin-top: -150px !important;
     }
 }
