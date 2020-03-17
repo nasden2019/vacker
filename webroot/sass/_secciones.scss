@@ -13,8 +13,9 @@ section {
         background-repeat: no-repeat;
         color: white;
 
+        // altura y separacion
         &#header-home {
-            min-height: 100vh;
+            min-height: 70vh;
         }
 
         .info {
@@ -81,7 +82,7 @@ section {
     // 
     &#seccion-busqueda {
         background-color: white;
-        padding-top: 50px;
+        // padding-top: 50px;
 
 
         h2:first-of-type {
@@ -331,18 +332,4 @@ section {
         }
     }
 
-}
-
-// ecotierra caracteristicas mobile
-@media(max-width: 522px) {
-    .sin-padding-ecotierra {
-        margin-top: -180px !important;
-    }
-}
-
-// 
-@media(max-width: 522px) {
-    .sin-padding-terrenos {
-        margin-top: -150px !important;
-    }
 }
