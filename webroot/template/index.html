@@ -40,24 +40,24 @@
     <div id="contenedor-sitio">
       <div class="loader"></div>
 
-      <div id="menu-superior">
+      <div id="menu-superior" class="menu-color">
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-auto">
               <a href="#!">
-                <img class="logo" src="/webroot/img/template/isologo-horizontal.png" alt="" />
+                <img class="logo" src="/webroot/img/template/isologo-color-horizontal.png" alt="" />
                 <img class="logo_responsivo" src="/webroot/img/template/isologo-color.png" alt="" />
               </a>
             </div>
 
-            <div class="col-auto">
+            <div class="col-auto" id="arriba">
               <nav class="text-center">
                 <a href="#!" id="cerrar-menu">
                   <i class="ion-close"></i>
                 </a>
                 <ul>
-                  <li><a href="index.html" class="active text-">Propiedades</a></li>
-                  <li><a href="terrenos.html">Terrenos</a></li>
+                  <li><a href="index.html">Propiedades</a></li>
+                  <li><a href="terrenos.html" class="active">Terrenos</a></li>
                   <li><a href="tasacion.html">Tasación</a></li>
                   <li><a href="contactanos.html">Contactános</a></li>
                 </ul>
@@ -68,18 +68,19 @@
               <a href="#!" id="abrir-menu" class="mr-3">
                 <i class="ion-navicon"></i>
               </a>
-              <a href="#!" id="whatsapp-menu">
+              <a href="https://api.whatsapp.com/send?phone=5493417182512&text=&source=&data=" id="whatsapp-menu">
                 <i class="ion-social-whatsapp-outline"></i>
               </a>
             </div>
           </div>
         </div>
       </div>
+      <!-- fin NAVBAR -->
 
       <section class="seccion-imagen d-flex justify-content-center align-items-center" id="header-home"
         style="background-image: url(/webroot/img/template/back1.jpg);">
         <!-- para darle tono oscuro sobre la img -->
-        <div class="overlay_imagen"></div>
+        <!-- <div class="overlay_imagen"></div> -->
 
         <div class="info">
           <span class="sub">EcoTierra</span>
@@ -245,13 +246,16 @@
               <h3 class="titulo-footer d-md-block d-none">Seguinos</h3>
               <ul class="redes">
                 <li>
-                  <a href="#!"><i class="ion-social-whatsapp-outline"></i></a>
+                  <a href="https://api.whatsapp.com/send?phone=5493417182512&text=&source=&data="><i
+                      class="ion-social-whatsapp-outline"></i></a>
                 </li>
                 <li>
-                  <a href="#!"><i class="ion-social-facebook-outline"></i></a>
+                  <a href="https://www.facebook.com/vackernegociosinmobiliarios"><i
+                      class="ion-social-facebook-outline"></i></a>
                 </li>
                 <li>
-                  <a href="#!"><i class="ion-social-instagram-outline"></i></a>
+                  <a href="https://www.instagram.com/vackernegociosinmobiliarios/"><i
+                      class="ion-social-instagram-outline"></i></a>
                 </li>
               </ul>
             </div>
@@ -269,7 +273,7 @@
         </div>
       </footer>
 
-      <a id="scroll-top" class="scroll-top" href="#!">
+      <a id="scroll-top" class="scroll-top" href="#arriba">
         <i class="ion-chevron-up"></i>
       </a>
     </div>
@@ -277,6 +281,7 @@
     <script type="text/javascript" src="/webroot/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="/webroot/vendor/bootstrap-4.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/webroot/js/vacker.min.js"></script>
+    <script src="main.js"></script>
   </body>
 
 </html>
